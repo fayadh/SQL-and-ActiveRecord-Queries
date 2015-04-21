@@ -23,13 +23,20 @@ Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp
 ```SQL
 /* Add your answer below */
 
+SELECT COUNT(media_type_id) FROM tracks;
+
 ```
 
 2. Find the least expensive Track that has the Genre "Electronica/Dance".
 ```SQL
+
+
 /* Add your answer below */
 
 ```
+
+SELECT * FROM tracks WHERE genre_id=15 ORDER BY unit_price;
+
 
 3. Find the all the Artists whose names start with A.
 ```SQL
@@ -37,11 +44,19 @@ Check out [W3Schools' SQL Reference](http://www.w3schools.com/sql/sql_syntax.asp
 
 ```
 
+select * from artists where name like 'A%';
+
+
+
 4. Find all the Tracks that belong to the first Playlist.
 ```SQL
 /* Add your answer below */
 
 ```
+
+select * from playlists_tracks where playlist_id=1;
+
+
 
 ## Active Record Query Interface
 In order to complete these exercises, you'll need to launch your Rails console with
